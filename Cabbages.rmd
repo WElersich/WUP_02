@@ -38,11 +38,16 @@ veggy <- cabbages
 boxplot(VitC~Cult,data=veggy)
 ```  
   
- Because the boxes do not intersect, we can fonfidently say that the c52 cultivar contains significantly more vitamin C (ascorbic acid) than the c39 cultivar.
+ Because the boxes do not intersect, we can confidently say that the c52 cultivar contains significantly more vitamin C (ascorbic acid) than the c39 cultivar.
 
 ### Numerical Descriptive Results
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
+```{r}
+favstats(VitC~Cult,data=veggy)
+```
+
+Here we can see that the first quartile of the data c52 is greater than the third quartile of c39. This clearly shows that c52 has significantly more vitamin C than c39.
 
 ## Inferential Results
 
